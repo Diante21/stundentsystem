@@ -29,7 +29,6 @@ public class StudentController {
     @PostMapping("/POST")
     public String add(@RequestBody Student student){
         studentService.saveStudent(student);
-
         return "New student is added";
     }
 
